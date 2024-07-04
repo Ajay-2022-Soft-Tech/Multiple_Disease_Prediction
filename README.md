@@ -25,51 +25,57 @@ This web application uses machine learning models to predict multiple diseases, 
 
 1. **Clone the repository**
 
-```bash
-git clone https://github.com/yourusername/multi-disease-prediction.git
-cd multi-disease-prediction
-Create and activate a virtual environment
-bash
-Always show details
+    ```bash
+    git clone https://github.com/yourusername/multi-disease-prediction.git
+    cd multi-disease-prediction
+    ```
 
-Copy code
-python -m venv venv
-source venv/bin/activate   # On Windows use `venv\\Scripts\\activate`
-Install the required packages
-bash
-Always show details
+2. **Create and activate a virtual environment**
 
-Copy code
-pip install -r requirements.txt
-Usage
-Run the Streamlit app
-bash
-Always show details
+    ```bash
+    python -m venv venv
+    source venv/bin/activate   # On Windows use `venv\\Scripts\\activate`
+    ```
 
-Copy code
-streamlit run app.py
-Open your browser
-Go to http://localhost:8501 to view the app.
+3. **Install the required packages**
 
-Project Structure
-kotlin
-Always show details
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-Copy code
+## Usage
+
+1. **Run the Streamlit app**
+
+    ```bash
+    streamlit run app.py
+    ```
+
+2. **Open your browser**
+
+    Go to `http://localhost:8501` to view the app.
+
+## Project Structure
+
 multi-disease-prediction/
 │
 ├── models/
-│   ├── diabetes_model.sav
-│   ├── heart_disease_model.sav
-│   ├── parkinson_model.sav
+│ ├── diabetes_model.sav
+│ ├── heart_disease_model.sav
+│ ├── parkinson_model.sav
 │
 ├── app.py
 ├── requirements.txt
 ├── README.md
 └── data/
-Models
-The machine learning models for predicting each disease are stored in the models/ directory. They are loaded into the app using Pickle.
 
-Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
+sql
+Copy code
 
+## Models
+
+The machine learning models for predicting each disease are stored in the `models/` directory. They are loaded into the app using Pickle.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a pull request.
