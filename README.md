@@ -76,3 +76,7 @@ This web app predicts diabetes, heart disease, and Parkinson's disease using mac
 - `Multiple_Disease_Pred.py`: Main application file for Streamlit.
 - `trained_model.sav`: Pre-trained machine learning model.
 - `requirements.txt`: List of required Python packages
+
+
+Contributing
+- `Feel free to fork and submit a pull request.`
