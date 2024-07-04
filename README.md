@@ -1,6 +1,8 @@
-# Multi-Disease Prediction Web App
+markdown
+Copy code
+# Multi-Disease Prediction System
 
-This web application uses machine learning models to predict multiple diseases, including Diabetes, Heart Disease, and Parkinson's Disease. The application is built using Streamlit for the front end and various machine learning algorithms for the back end.
+This web app uses machine learning models to predict the likelihood of multiple diseases, including diabetes, heart disease, and Parkinson's disease. The app is built with Streamlit and a trained model saved as `trained_model.sav`.
 
 ## Features
 
@@ -8,74 +10,70 @@ This web application uses machine learning models to predict multiple diseases, 
 - **Heart Disease Prediction**
 - **Parkinson's Disease Prediction**
 
-## Demo
-
-![App Demo](link_to_demo_gif_or_image)
-
-## Requirements
-
-- Python 3.7+
-- Streamlit
-- Pandas
-- Numpy
-- Scikit-learn
-- Pickle
-
 ## Installation
 
-1. **Clone the repository**
+### Prerequisites
 
-    ```bash
-    git clone https://github.com/yourusername/multi-disease-prediction.git
-    cd multi-disease-prediction
-    ```
+- Python 3.7 or higher
+- `pip` (Python package installer)
+- Anaconda (Recommended)
 
-2. **Create and activate a virtual environment**
+### Clone the Repository
 
-    ```bash
-    python -m venv venv
-    source venv/bin/activate   # On Windows use `venv\\Scripts\\activate`
-    ```
+```bash
+git clone https://github.com/yourusername/multi-disease-prediction.git
+cd multi-disease-prediction
+Create a Virtual Environment
+It is recommended to create a virtual environment to manage dependencies.
 
-3. **Install the required packages**
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-## Usage
-
-1. **Run the Streamlit app**
-
-    ```bash
-    streamlit run app.py
-    ```
-
-2. **Open your browser**
-
-    Go to `http://localhost:8501` to view the app.
-
-## Project Structure
-
-multi-disease-prediction/
-│
-├── models/
-│ ├── diabetes_model.sav
-│ ├── heart_disease_model.sav
-│ ├── parkinson_model.sav
-│
-├── app.py
-├── requirements.txt
-├── README.md
-└── data/
-
-sql
+bash
 Copy code
+conda create --name disease-prediction-env python=3.8
+conda activate disease-prediction-env
+Install Dependencies
+Install the required packages using pip.
 
-## Models
+bash
+Copy code
+pip install -r requirements.txt
+Download the Trained Model
+Ensure you have the trained_model.sav file in the project directory. If not, download it from here.
 
-The machine learning models for predicting each disease are stored in the `models/` directory. They are loaded into the app using Pickle.
+Configuration
+Update Model Path in Multiple_Disease_Pred.py
+Open the Multiple_Disease_Pred.py file and update the path to the trained model file. Change the variable that loads the model to the correct path.
 
-## Contributing
+python
+Copy code
+import pickle
 
-Contributions are welcome! Please feel free to submit a pull request.
+# Load the trained model
+model_path = "path_to_your_model/trained_model.sav"
+model = pickle.load(open(model_path, 'rb'))
+Replace path_to_your_model/trained_model.sav with the actual path to your trained_model.sav file.
+
+Running the App
+Activate the virtual environment (if not already activated):
+
+bash
+Copy code
+conda activate disease-prediction-env
+Run the Streamlit app:
+
+bash
+Copy code
+streamlit run path_to_/Multiple_Disease_Pred.py
+Open the app in your browser:
+
+Streamlit will provide a local URL (usually http://localhost:8501) where you can interact with the web app.
+
+Usage
+Select the disease you want to predict from the sidebar.
+Enter the required details in the input fields.
+Click on the 'Predict' button to see the results.
+File Structure
+Multiple_Disease_Pred.py: The main application file for Streamlit.
+trained_model.sav: The pre-trained machine learning model.
+requirements.txt: List of required Python packages.
+Contributing
+Contributions are welcome! Please fork the repository and submit a pull request.
