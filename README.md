@@ -37,6 +37,15 @@ This web app predicts diabetes, heart disease, and Parkinson's disease using mac
     pip install -r requirements.txt
     ```
 
+### Demo
+<img src="https://github.com/Ajay-2022-Soft-Tech/Multiple_Disease_Prediction/assets/113298640/77e6b20e-df2d-4465-a427-40b7d251f641"  width="1000" height="400" />
+
+<img src="https://github.com/Ajay-2022-Soft-Tech/Multiple_Disease_Prediction/assets/113298640/1b28e646-0513-4d7d-a638-09ff5d9f78d1"  width="1000" height="400" />
+
+<img src="https://github.com/Ajay-2022-Soft-Tech/Multiple_Disease_Prediction/assets/113298640/e40ba427-8162-4387-8585-46411006fc99"  width="1000" height="400" />
+
+
+
 ### Configuration
 
 1. Download the trained model file `trained_model.sav` and place it in the project directory.
